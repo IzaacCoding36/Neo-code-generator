@@ -2,6 +2,7 @@
 
 :root{
     --branco: white;
+    --preto: black;
     --cor-de-fundo: #052800 ;
     --fundo-senha: #1b6a00;
     --fundo-texto: #123c00;
@@ -23,9 +24,18 @@ body{
 .botao-linguagem{
     width: 3%;
     height: 3%;
-    color: white;
+    color: var(--branco);
     border: solid 2px orange;
     border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s, border 0.3s, box-shadow 0.3s;
+}
+
+.botao-linguagem:hover{
+    color: var(--preto);
+    border: solid 2px var(--preto);
+    background-color: orange;
+    box-shadow: 0px 0px 15px orange;
+    transition: background-color 0.3s, color 0.3s, border 0.3s, box-shadow 0.3s;
 }
 
 .icone {
@@ -37,6 +47,7 @@ body{
 
 .titulo-principal{
     font-family: var(--roboto-mono);
+    text-shadow: 0px 0px 15px orange;
     font-size: 32px;
 }
 
@@ -95,6 +106,7 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
 .parametro-senha{
     width: 50%;
     margin: 0 auto;
@@ -112,7 +124,14 @@ body{
     padding: 24px;
     font-size: 24px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
+
+.parametro-senha__botao:hover{
+    background-color: var(--preto);
+    transition: background-color 0.3s;
+}
+
 .parametro-senha__texto{
     padding: 24px;
     background-color: var(--cor-de-fundo);
@@ -137,29 +156,35 @@ label{
     height: 30px;
     width: 100%;
 }
+
 .forca{
     height: 30px;
     position: relative;
     bottom: 30px;
 }
+
 .fraca{
     width: 25%;
-    background-color: #E71B32; 
+    background-color: #E71B32;
+    transition: width 0.3s, background-color 0.3s;
 }
+
 .media{
     background-color: #FAF408;
     width: 50%;
+    transition: width 0.3s, background-color 0.3s;
 }
+
 .forte{
     background-color: #00FF85;
     width: 100%;
+    transition: width 0.3s, background-color 0.3s;
 }
 
 .parametro-senha-textos{
     display: flex;
     justify-content: space-between;
 }
-
 
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha{

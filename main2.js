@@ -15,7 +15,6 @@ botoes[1].onclick = aumentaTamanho;
 
 function diminuiTamanho() {
     if (tamanhoSenha > 1) {
-        // tamanhoSenha = tamanhoSenha-1;
         tamanhoSenha--;
     }
     numeroSenha.textContent = tamanhoSenha;
@@ -23,7 +22,6 @@ function diminuiTamanho() {
 }
 function aumentaTamanho() {
     if (tamanhoSenha < 20) {
-        // tamanhoSenha = tamanhoSenha+1;
         tamanhoSenha++;
     }
     numeroSenha.textContent = tamanhoSenha;
@@ -58,7 +56,6 @@ function geraSenha() {
     }
     campoSenha.value = senha;
     classificaSenha(alfabeto.length);
-
 }
 
 function classificaSenha(tamanhoAlfabeto){
@@ -75,9 +72,3 @@ function classificaSenha(tamanhoAlfabeto){
     const valorEntropia = document.querySelector('.entropia');
     valorEntropia.textContent = "A computer can take up to " + Math.floor(2**entropia/(100e6*60*60*24)) + " days to discover this password.";
 }
-
-
-
-
-
-
