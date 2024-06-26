@@ -65,6 +65,7 @@ body{
     margin-top: 80px; 
     background: var(--fundo-senha);
     padding: 24px;
+    border-radius: 50px;
     border-bottom: 6px solid var(--borda);
 }
 
@@ -89,6 +90,7 @@ body{
 .parametro{
     background-color: var(--fundo-texto);
     border: 2px solid var(--borda);
+    border-radius: 50px;
     margin-top: 32px;
     padding: 24px;
 }
