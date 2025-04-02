@@ -120,7 +120,7 @@ label{font-size: 20px;}
 
 .checkbox{width: 20px; height: 20px; cursor: pointer;}
 
-.barra{background-color: var(--fundo-senha); height: 30px; width: 100%; border: 2px outset orange;}
+.barra{background-color: var(--fundo-senha); height: 30px; width: 100%;}
 
 .forca{height: 30px; position: relative; bottom: 30px;}
 
@@ -135,5 +135,16 @@ label{font-size: 20px;}
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha{
         flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .icone{
+        width: 20%;
+        height: 20%;
+    }
+    .botao-linguagem{
+        width: 10%;
+        height: 10%;
     }
 }
