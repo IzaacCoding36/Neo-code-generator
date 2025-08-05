@@ -192,6 +192,7 @@ body {
     height: 2px;
     background: linear-gradient(90deg, transparent, var(--borda), transparent);
     animation: borderGlow 2s ease-in-out infinite alternate;
+    pointer-events: none;
 }
 
 @keyframes borderGlow {
@@ -309,6 +310,7 @@ body {
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: subtract;
     -webkit-mask-composite: xor;
+    pointer-events: none;
 }
 
 .parametro-titulo {
