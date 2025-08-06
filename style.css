@@ -50,6 +50,7 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    background: var(--cor-de-fundo);
 }
 
 body {
@@ -491,6 +492,7 @@ body {
     border-left: 3px solid var(--borda);
     font-family: var(--font-mono);
 }
+
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
